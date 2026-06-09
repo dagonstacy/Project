@@ -1,0 +1,95 @@
+# 🌿 Cozy Plant Budget Calculator
+
+Welcome to the **Cozy Plant Budget Calculator**, an interactive, single-user wealth-tracking utility designed entirely using lightweight vanilla web technologies (HTML5, CSS3, and JavaScript ECMAScript 5/6). This web application discards standard, uninspired tabular financial reports in favor of an organic, gamified metaphor: a dynamic garden plant that thrives or wilts in direct response to your spending habits.
+
+The application utilizes persistent state storage to safeguard data across browser closures, features granular user interactions to scale budgeting lists dynamically, and packages clean metrics compilation engines that offer downloadable text reports directly to your local file system.
+
+---
+
+## 📖 Executive Summary & Design Metaphor
+
+Traditional financial accounting software often induces cognitive friction and user fatigue through clinical, over-engineered spreadsheets. The Cozy Plant Budget Calculator breaks this paradigm by employing a **visual-kinetic feedback interface**.
+
+### 🌸 The Plant Growth Lifecycle
+Your financial parameters dictate the morphological state of a localized user interface vector container representing a digital garden pot:
+1. **Fresh Sprout (0% – 30% Budget Spent):** Represents low financial asset expenditure. The application renders a small, vibrant green stem breaking surface soil, signifying high resource liquidity and monetary safety.
+2. **Growing Strong (31% – 70% Budget Spent):** As expenditures scale, a left-hand foliage leaf structure sprouts seamlessly into view, validating balanced and sustainable lifestyle costing.
+3. **Healthy Leaves (71% – 99% Budget Spent):** A secondary right-hand leaf layer activates via operational logic, signaling that you are leveraging higher capacities of your monthly income while staying out of deficit structures.
+4. **In Full Bloom (100% Budget Utilization Exactly):** When total outgoing expenses exactly align with net earnings, an ornamental flower bud asset blooms smoothly at the tip of the stem vector.
+5. **Wilted Nightmare State (Deficit / Overbudget):** The moment expenses surpass total monthly income, the application shifts states. The plant's color profile morphs from rich organic green to an un-vital, muted charcoal grey, triggering a physical css rotation keyframe that droops the stem asset 35-degrees to simulate real-time wilting.
+
+---
+
+## 🛠️ Technical Architecture
+
+This application is decoupled down a modern cleanly-separated architectural pipeline, dividing raw markup layout framework, procedural execution layout logic, and aesthetic stylesheets into isolated components.
+
+### 1. Document Object Model Architecture (`index.html`)
+The structural layer maps out the spatial hierarchy of data capture and visualization. It contains:
+* **The Visualization Deck:** Formed using rigid positional layout coordinates (`relative`/`absolute`), allowing child nodes like the `.plant-stem`, `.leaf`, and `.flower-bud` to move independently inside their container frame.
+* **Reactive Input Fields:** The Monthly Income module leverages native HTML5 form inputs running localized validation scripts via explicit event binding properties (`oninput="calculateBudget()"`).
+* **Dynamic Append List Wrapper:** An empty contextual target wrapper element (`#category-list`) waiting to act as a parent container for dynamically generated category entries.
+
+### 2. Computational State Engine & Cache Strategy (`script.js`)
+The logical execution engine controls math handling, application data transformations, and storage pipelines:
+* **DOM Iteration Query Loops:** When budget parameters change, the application invokes a global recount loop using `document.querySelectorAll('.cat-amount')`. This reads raw textual integers, sanitizes empty fields to absolute numeric zeros (`parseFloat(input.value) || 0`), and computes cumulative costs.
+* **Persistent Web-Memory Pipeline (`localStorage`):** Every keypress fires an inline callback tracking mechanism directly to the browser's hidden dictionary register (`localStorage.setItem()`). The entire budget map is packed into an optimized JSON object payload, meaning data survives browser reboots, cache clears, and operating system updates without requiring a cloud-hosted backend server database.
+* **Virtual Blob Streaming Engine:** The "Download Report" function intercepts layout parameters and strings them into a plain text workspace array. Using standard JavaScript string padding (`padEnd()`), it compiles a financial ledger statement. This string is bound inside a data-blob utility element (`new Blob()`), constructing an encoded download URL that forces your system's hard drive to prompt a physical filesystem save event.
+
+---
+
+## 🎛️ Detailed Control & Operations Manual
+
+Using the interactive workspace dashboard is highly intuitive and requires zero development knowledge:
+
+* **Setting Up Income:** Type your primary net revenue in the `Monthly Income ($)` parameter box. The plant calculates structural growth metrics exclusively relative to this core integer figure.
+* **Adding Specific Categories:** Click the green `+ Add Category` button. The JavaScript execution engine instantly creates a structural row wrapper containing an empty item description box, an independent number value container, and a deletion trigger.
+* **Removing Individual Expenses:** Click the red `×` button flanking any individual category field row. The application instantly detaches that element node from the layout matrix, subtracts its cost footprint from the current global register, saves the new clean dataset, and animates the plant downward smoothly.
+* **Wiping System Memory:** Click the grey `Clear All` button. A fallback safety modal validation prompt asks if you want to execute the system cache reset. Confirming this instantly vaporizes the local storage record file, clears out screen data layouts, and sets the system state back to its baseline placeholder properties.
+* **Exporting Text Documents:** Click the blue `Download Report` button. The script calculates your ledger totals in the background and saves a file named `cozy-budget-report.txt` onto your computer.
+
+---
+
+## 📑 Sample Exported Document Layout
+
+When running the downloadable reporting engine, your machine generates a clean financial audit report constructed like this:
+
+```text
+========================================
+         COZY PLANT BUDGET REPORT
+========================================
+
+Date Generated: 6/9/2026
+Monthly Income: \$3,000
+
+----------------------------------------
+ EXPENSE CATEGORIES
+----------------------------------------
+Rent..................... \$1,000
+Groceries................ \$400
+Electric Bill............ \$150
+Entertainment............ \$200
+
+----------------------------------------
+ FINANCIAL SUMMARY
+----------------------------------------
+Total Budget Spent:....... \$1,750
+Remaining Balance:........ \$1,250
+Plant Height Capacity:.... 58%
+
+Budget Status: COZY & SAFE! Your plant is growing strong.
+Keep up the great work sustaining your garden environment!
+========================================
+```
+
+---
+
+## 🚀 Deployment & Installation Checklist
+
+Because this web app runs on raw client-side technologies without server dependencies, hosting your application live to the web via GitHub Pages is simple and free:
+
+1. **Upload Files:** Drag, drop, and commit your `index.html` and `script.js` files into your public repository.
+2. **Access Project Settings:** Click the **Settings** (gear icon) tab located in the repository navigation strip.
+3. **Navigate to GitHub Pages:** Locate the **Pages** menu link on the lower left-hand navigation column list.
+4. **Select Source Branch:** Look under the *Build and Deployment* workspace dashboard. Switch the Branch selection filter from **None** over to **main** (or **master**).
+5. **Publish Code Live:** Leave the folder root field set to `/(root)` and select **Save**. Your permanent web tracking platform URL link will compile live within sixty seconds!
