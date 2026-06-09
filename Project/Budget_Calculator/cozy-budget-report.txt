@@ -1,0 +1,24 @@
+========================================
+         COZY PLANT BUDGET REPORT       
+========================================
+
+Date Generated: 6/9/2026
+Monthly Income: $6,000
+
+----------------------------------------
+ EXPENSE CATEGORIES
+----------------------------------------
+Rent..................... $7,000
+Groceries................ $300
+Gas...................... $180
+
+----------------------------------------
+ FINANCIAL SUMMARY
+----------------------------------------
+Total Budget Spent:....... $7,480
+Remaining Balance:........ $-1,480
+Plant Height Capacity:.... 125%
+
+Budget Status: NIGHTMARE! Your plant is wilting.
+Action Required: Reduce expenses to balance your soil.
+========================================
